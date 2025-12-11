@@ -53,8 +53,33 @@ function attachGlowEffect() {
   });
 }
 
+function setupHologram() {
+  const trigger = document.querySelector('.holo-trigger');
+  const hero = document.querySelector('.hero-visual');
+  const hologram = document.querySelector('#holo-bear');
+  if (!trigger || !hero || !hologram) return;
+
+  const toggleHolo = () => {
+    const shouldShow = !hero.classList.contains('holo-active');
+    hero.classList.toggle('holo-active', shouldShow);
+    hologram.classList.toggle('is-visible', shouldShow);
+    trigger.setAttribute('aria-pressed', shouldShow.toString());
+    trigger.classList.add('energize');
+    setTimeout(() => trigger.classList.remove('energize'), 620);
+  };
+
+  trigger.addEventListener('click', toggleHolo);
+  trigger.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      toggleHolo();
+    }
+  });
+}
+
 window.addEventListener('DOMContentLoaded', () => {
   setActiveNav();
   handleContactForm();
   attachGlowEffect();
+  setupHologram();
 });
