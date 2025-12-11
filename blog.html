@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Blog — Bubu Bear</title>
-<style>
-    body{font-family:Inter, Arial, sans-serif;margin:0;background:#f6fbfd;color:#023e5a}
-    .wrap{max-width:900px;margin:22px auto;padding:18px}
-    header{padding:14px}
-    .post{background:white;border-radius:12px;padding:18px;margin-bottom:12px;border:1px solid rgba(2,119,189,0.04)}
-    .post h3{margin:0 0 8px}
-    .meta{color:#6c8ea3;font-size:13px}
-    nav{margin-bottom:12px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubu Systems — Blog</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="wrap">
-        <header style="display:flex;justify-content:space-between;align-items:center"><div><a href="index.html">← Home</a></div><div>Blog</div></header>
-
-        <!-- lotus divider -->
-        <div style="display:flex;justify-content:center;margin:10px 0">
-            <a href="protocol.html" class="lotus" title="Protocol">
-                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                    <g transform="translate(60,60)">
-                        <g class="petal"><path d="M0,-28 C12,-20 22,-8 24,6 C8,2 -8,2 -24,6 C-22,-8 -12,-20 0,-28 Z" fill="#0288d1"/></g>
-                        <circle r="10" fill="#e1f5fe" stroke="#0277bd" stroke-width="1.5"/>
-                    </g>
-                </svg>
-            </a>
+<body class="grid-overlay">
+  <div class="site-shell">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-mark">BB</div>
+        <div>
+          <h1>Signal Log</h1>
+          <small>Dispatches from the field</small>
         </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="blog.html">Blog</a>
+        <a href="protocol.html">Protocol</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-        <article id="post1" class="post">
-            <h3>Chrome Heart x Bubu</h3>
-            <div class="meta">November 24, 2025</div>
-            <p>A design exploration and collaboration notes.</p>
-        </article>
-        <article id="post2" class="post">
-            <h3>Stay Tuned</h3>
-            <div class="meta">— ongoing</div>
-            <p>Short updates and previews for upcoming projects.</p>
-        </article>
+    <section class="hero">
+      <div class="panel">
+        <div class="kicker">Narratives</div>
+        <h2>Stories with Bubu-grade interfaces</h2>
+        <p class="lead">This blog is tuned like a HUD: clear typography, crisp grids, and just enough glow to keep things cinematic. Each entry sits on its own page so you can dive straight into the intel.</p>
+        <div class="actions">
+          <a class="button" href="contact.html">Send an encrypted reply</a>
+          <a class="button-ghost" href="catalogue.html">View the field kit</a>
+        </div>
+      </div>
+      <div class="panel stack">
+        <div class="badge">RSS v1</div>
+        <p class="small">Follow the drops, collabs, and winter ops. Everything is logged with precision timestamps.</p>
+      </div>
+    </section>
 
-    </div>
+    <section class="section">
+      <div class="kicker">Featured entries</div>
+      <div class="article-list">
+        <article class="article" id="post1">
+          <div class="tiny-label">Collaboration</div>
+          <h4>Chrome Hearts x Bubu</h4>
+          <div class="meta">November 24, 2025 • Couture meet-up</div>
+          <p class="small">Armor-like jewelry meets snowfield mythos. The Bubu-approved aesthetic brief lives here.</p>
+        </article>
+        <article class="article">
+          <div class="tiny-label">Field log</div>
+          <h4>Snowfield dominion</h4>
+          <div class="meta">December 2, 2025 • Recon</div>
+          <p class="small">Breaking down how to conquer the frost with tech-forward momentum and a grin.</p>
+        </article>
+        <article class="article">
+          <div class="tiny-label">Notes</div>
+          <h4>Signal discipline</h4>
+          <div class="meta">December 12, 2025 • Systems</div>
+          <p class="small">How multi-page navigation keeps intel organized and visitors in the flow.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="kicker">Transit tube</div>
+      <h3>Hologram on repeat</h3>
+      <div class="panel">
+        <div class="holo-tube">
+          <div class="tube-glow"></div>
+          <div class="tube-track">
+            <div class="bear-walker" aria-hidden="true">
+              <div class="bear-figure">
+                <div class="bear-ear left"></div>
+                <div class="bear-ear right"></div>
+                <div class="bear-head"></div>
+                <div class="bear-hat"></div>
+                <div class="bear-body"></div>
+                <div class="bear-arm wave"></div>
+                <div class="bear-arm"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="small">Boo-boo Bear strolls the luminous corridor forever, like a holographic GIF that only insiders spot.</p>
+      </div>
+    </section>
+
+    <footer class="footer">Subscribe to the signal. Stay electric.</footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
