@@ -12,7 +12,7 @@ function handleContactForm() {
   const form = document.querySelector('#contact-form');
   if (!form) return;
   const status = document.querySelector('#contact-status');
-  const targetEmail = 'bububearian@gmail.com';
+<
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -53,19 +53,10 @@ function attachGlowEffect() {
   });
 }
 
-function activateSecretPortal() {
-  document.querySelectorAll('.glow-accent').forEach((glow) => {
-    glow.setAttribute('role', 'button');
-    glow.setAttribute('aria-label', 'Open the secret hologram page');
-    glow.addEventListener('click', () => {
-      window.location.href = 'secret.html';
-    });
-  });
-}
 
 window.addEventListener('DOMContentLoaded', () => {
   setActiveNav();
   handleContactForm();
   attachGlowEffect();
-  activateSecretPortal();
+
 });
