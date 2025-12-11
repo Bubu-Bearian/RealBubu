@@ -5,6 +5,7 @@
   --panel: #0c1326;
   --card: #0f1a32;
   --accent: #5ae2ff;
+
   --accent-2: #7b5dff;
   --text: #e8f1ff;
   --muted: #8aa1c2;
@@ -30,6 +31,7 @@ body {
   min-height: 100vh;
   position: relative;
 }
+
 
 ::selection {
   background: rgba(90, 226, 255, 0.25);
@@ -63,7 +65,7 @@ body {
   filter: blur(120px);
   background: radial-gradient(circle, rgba(90, 226, 255, 0.2), transparent 40%);
   opacity: 0.8;
-  z-index: 0;
+
 }
 
 .header {
@@ -493,6 +495,7 @@ blockquote {
   border: 1px solid var(--line);
   color: var(--muted);
 }
+
 
 @media (max-width: 640px) {
   .header {

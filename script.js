@@ -12,7 +12,7 @@ function handleContactForm() {
   const form = document.querySelector('#contact-form');
   if (!form) return;
   const status = document.querySelector('#contact-status');
-  const targetEmail = 'hello@starkverse.com';
+<
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
@@ -53,8 +53,10 @@ function attachGlowEffect() {
   });
 }
 
+
 window.addEventListener('DOMContentLoaded', () => {
   setActiveNav();
   handleContactForm();
   attachGlowEffect();
+
 });
