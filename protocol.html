@@ -1,56 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Protocol Alpha — Bubu Bear</title>
-<style>
-    body{font-family:Inter, Arial, sans-serif;margin:0;background:#f6fbfd;color:#023e5a}
-    .wrap{max-width:1000px;margin:24px auto;padding:18px}
-    .note{background:linear-gradient(180deg,#fff,#f6fbff);padding:18px;border-radius:12px;border:1px solid rgba(2,119,189,0.04)}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:16px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubu Systems — Protocol</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="wrap">
-        <header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px"><div><a href="index.html">← Home</a></div><div>Protocol Alpha</div></header>
-
-        <!-- lotus divider -->
-        <div style="display:flex;justify-content:center;margin:10px 0">
-            <a href="contact.html" class="lotus" title="Contact">
-                <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
-                    <g transform="translate(60,60)">
-                        <g class="petal"><path d="M0,-28 C12,-20 22,-8 24,6 C8,2 -8,2 -24,6 C-22,-8 -12,-20 0,-28 Z" fill="#0288d1"/></g>
-                        <circle r="10" fill="#e1f5fe" stroke="#0277bd" stroke-width="1.5"/>
-                    </g>
-                </svg>
-            </a>
+<body class="grid-overlay">
+  <div class="site-shell">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-mark">BB</div>
+        <div>
+          <h1>Protocol</h1>
+          <small>Operational cadence &amp; rules of engagement</small>
         </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="catalogue.html">Catalogue</a>
+        <a href="blog.html">Blog</a>
+        <a href="protocol.html">Protocol</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-        <div class="grid">
-            <div>
-                <section class="note">
-                    <h3>Concept Lab</h3>
-                    <p>Protocol Alpha publishes non-sensitive, high-level sketches: mood boards, experimental UI ideas, and high-level process notes. It is not a repository for sensitive or operational instructions. All material here is creative and conceptual.</p>
-                </section>
-                <section style="margin-top:12px">
-                    <h4>Recent Sketches</h4>
-                    <ul class="muted">
-                        <li>UX flow for a stark UI dashboard</li>
-                        <li>Animated lotus motif as a section divider</li>
-                        <li>Photo compositing experiments</li>
-                    </ul>
-                </section>
-            </div>
-            <aside>
-                <div class="note">
-                    <h4>Private Lab</h4>
-                    <p class="muted small">Some ideas are private. Contact the author to collaborate.</p>
-                </div>
-            </aside>
+    <section class="hero">
+      <div class="panel">
+        <div class="kicker">Playbook</div>
+        <h2>Move fast, stay elegant, remain impossible to ignore</h2>
+        <p class="lead">Each phase of the protocol is mapped like a Stark schematic—clear steps, modular actions, and deliberate checkpoints.</p>
+        <div class="actions">
+          <a class="button" href="catalogue.html">See assets</a>
+          <a class="button-ghost" href="contact.html">Request access</a>
         </div>
-    </div>
+      </div>
+      <div class="panel stack">
+        <div class="badge">Status: Green</div>
+        <p class="small">Protocol Alpha is live and iterating. Feedback loops are instant.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="kicker">Timeline</div>
+      <h3>Alpha cadence</h3>
+      <div class="timeline">
+        <div class="milestone">
+          <h4>Phase 01 — Recon</h4>
+          <p class="small">Identify prime locations for calling cards and map weather constraints.</p>
+        </div>
+        <div class="milestone">
+          <h4>Phase 02 — Deployment</h4>
+          <p class="small">Deploy Prime, Shadow, and Pulse assets with geo-tagged documentation.</p>
+        </div>
+        <div class="milestone">
+          <h4>Phase 03 — Broadcast</h4>
+          <p class="small">Share intel on the blog with cinematic renders and POV notes.</p>
+        </div>
+        <div class="milestone">
+          <h4>Phase 04 — Feedback</h4>
+          <p class="small">Gather responses through the contact channel and adapt the next sprint.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="split">
+        <div class="panel">
+          <div class="kicker">Tools</div>
+          <div class="pill-row">
+            <span class="pill">HUD dashboards</span>
+            <span class="pill">Encrypted comms</span>
+            <span class="pill">3D renders</span>
+            <span class="pill">Field beacons</span>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="kicker">Outcome</div>
+          <p class="small">A portfolio that feels like a Stark lab walkthrough—sleek visuals, decisive copy, and purposeful navigation.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">Protocols evolve. The legend remains.</footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
-<!-- protocol.html placeholder -->
