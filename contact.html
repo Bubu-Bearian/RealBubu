@@ -1,49 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Bubu Bear</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubu Systems — Contact</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
-    <header>
-        <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Boo-Boo_Bear.png" alt="Bubu Bear">
-        <h1>Contact Bubu Bear</h1>
-        <p>Reach out below</p>
-    </header>
-
-    <nav>
+<body class="grid-overlay">
+  <div class="site-shell">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-mark">BB</div>
+        <div>
+          <h1>Contact</h1>
+          <small>Open a secure channel</small>
+        </div>
+      </div>
+      <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="catalogue.html">Catalogue</a>
         <a href="blog.html">Blog</a>
-        <a href="protocol.html">Protocol Alpha</a>
+        <a href="protocol.html">Protocol</a>
         <a href="contact.html">Contact</a>
-    </nav>
+      </nav>
+    </header>
 
-    <section>
-        <h2>Get in Touch</h2>
-        <p>If you'd like to reach out, fill out the form below. Bubu Bear will respond when not chasing snow bunnies or running global operations.</p>
-
-        <form action="#" method="POST" class="contact-form">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="6" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
+    <section class="hero">
+      <div class="panel">
+        <div class="kicker">Signal</div>
+        <h2>Send a message straight to command</h2>
+        <p class="lead">Use the interactive form to craft a secure email. We launch your default email client with a prefilled message so nothing gets lost in transit.</p>
+        <div class="actions">
+          <a class="button" href="mailto:hello@starkverse.com">Direct email</a>
+          <a class="button-ghost" href="blog.html">Read the latest intel</a>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="badge">Form status</div>
+        <p class="small">We never store your data. Everything routes through your email client with one click.</p>
+      </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Bubu Bear's Domain</p>
-    </footer>
+    <section class="section">
+      <div class="kicker">Message center</div>
+      <div class="split">
+        <div class="panel">
+          <form id="contact-form" class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Tony Stark" required>
 
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+            <label for="reason">Reason</label>
+            <select id="reason" name="reason">
+              <option>Collaboration</option>
+              <option>Press</option>
+              <option>Mission update</option>
+              <option>General</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Draft your signal here..." required></textarea>
+
+            <button class="button" type="submit">Launch email</button>
+            <div id="contact-status" class="status"></div>
+          </form>
+        </div>
+        <div class="panel">
+          <div class="kicker">Response time</div>
+          <p class="small">Command replies quickly, especially to collaboration and press requests. Expect movement within 24 hours.</p>
+          <ul class="listed">
+            <li>Form auto-opens your email client with your words intact.</li>
+            <li>Active navigation highlights your current page.</li>
+            <li>Glowing panels respond to your pointer for subtle interactivity.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">Thank you for connecting. Stay luminous.</footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
