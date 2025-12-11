@@ -12,7 +12,7 @@ function handleContactForm() {
   const form = document.querySelector('#contact-form');
   if (!form) return;
   const status = document.querySelector('#contact-status');
-  const targetEmail = 'hello@bubusystems.com';
+  const targetEmail = 'bububearian@gmail.com';
 
   form.addEventListener('submit', (event) => {
     event.preventDefault();
